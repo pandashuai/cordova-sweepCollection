@@ -5,13 +5,13 @@ The scan collector developed under the cordova platform（在cordova平台下开
 
 ## 1、The required command (所需命令)
 
- e: cordova [how to install? (如何安装?)](http://cordova.apache.org)
+ cordova   ([how to install? (如何安装?)](http://cordova.apache.org))
 
 ## 2、Download plugin (下载插件)
 
 ```
 $ cd switch/to/your/project/directory/cordova-sweepCollection
-$ cordova plugin add com.phonegap.plugins.barcodescanner --save
+$ cordova plugin add phonegap-plugin-barcodescanner --save
 ```
 
 ## 3、Need to generate the platform (需要生成的平台)
