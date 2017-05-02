@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.sweepCollection" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>扫码收集器</name>
+    <description>
+        将扫码收集到的数据上传到自定义的服务器上
+    </description>
+    <author email="1663998104@qq.com" href="http://www.dengdengpan.cn">
+        邓登攀
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="ldpi" src="www/public/img/logo/android/ldpi.png" />
+        <icon density="mdpi" src="www/public/img/logo/android/mdpi.png" />
+        <icon density="hdpi" src="www/public/img/logo/android/hdpi.png" />
+        <icon density="xhdpi" src="www/public/img/logo/android/xhdpi.png" />
+        <icon density="xxhdpi" src="www/public/img/logo/android/xxhdpi.png" />
+        <icon density="xxxhdpi" src="www/public/img/logo/android/xxxhdpi.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="phonegap-plugin-barcodescanner" spec="~6.0.6" />
+    <engine name="android" spec="~6.1.2" />
+</widget>

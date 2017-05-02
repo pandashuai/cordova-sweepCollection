@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>扫码收集器</title>
+    <link rel="stylesheet" href="public/framework/css/frozen.css">
+    <link rel="stylesheet" href="public/framework/css/frozen.css">
+    <link rel="stylesheet" href="public/css/index.css">
+</head>
+
+<body>
+    <header class="ui-header ui-header-positive ui-border-b">
+        <div class="ui-row-flex">
+            <div class="ui-col " style="text-align: left;">
+                <span id="upload">上传</span>
+            </div>
+            <div class="ui-col ui-col-2" style="text-align: center;">
+                <h1>扫码收集器</h1> </div>
+            <div class="ui-col ui-txt-warning" style="text-align: right;">
+                <i id='emptied' class="ui-icon-delete" style="color:#ff4222;"></i>
+            </div>
+        </div>
+    </header>
+    <footer class="ui-footer ui-footer-btn">
+        <ul class="ui-tiled ui-border-t ">
+            <li id="scanCode">
+                <div>开启扫描</div>
+            </li>
+        </ul>
+    </footer>
+    <section class="ui-container">
+        <div class="ui-flex ui-flex-pack-center ui-whitespace">
+            <h2 class="ui-txt-info">数据区:</h2>
+        </div>
+        <div class="ui-ddp-panel" id="result">
+            
+        </div>
+    </section>
+
+    <div class="ui-dialog ui-ddp-dialog" id="upload-dialog">
+        <div class="ui-dialog-cnt">
+            <div class="ui-dialog-bd">
+                <div>
+                    <h4>上传参数(GET形式)</h4>
+                    <div class="ui-ddp-mb">
+                        <label class="ui-txt-info">URL</label>
+                        <div class="ui-form-item ui-form-item-pure ui-border-b">
+                            <input type="text" placeholder="url地址" class="ui-ddp-input url">
+                            <a href="#" class="ui-icon-close"></a>
+                        </div>
+                    </div>
+                    <div class="ui-ddp-mb">
+                        <label class="ui-txt-info">参数名称</label>
+                        <div class="ui-form-item ui-form-item-pure ui-border-b">
+                            <input type="text" placeholder="默认是data" value='data' class="ui-ddp-input param">
+                            <a href="#" class="ui-icon-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-dialog-ft ui-btn-group">
+                <button type="button" data-role="button" class="select">上传</button>
+                <button type="button" data-role="button" class="select">保存</button>
+                <button type="button" data-role="button" class="select">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="public/framework/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="public/framework/js/frozen.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="public/js/index.js"></script>
+</body>
+
+</html>

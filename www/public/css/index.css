@@ -1,0 +1,76 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+    overflow-y: hidden;
+}
+
+.ui-whitespace {
+    padding: 15px 0;
+}
+
+.ui-dialog .ui-dialog-bd h4 {
+    margin-bottom: 4px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.ui-ddp-panel {
+    position: absolute;
+    left: 2.5%;
+    width: 95%;
+    border-radius: 3px;
+    border:1px solid #efbbbb;
+    height: 73%;
+    overflow: auto;
+    
+}
+
+.ui-ddp-padding-l {
+    padding-left: 0;
+}
+
+.ui-ddp-panel .ui-ddp-input {
+    line-height: 44px;
+    padding-left: 15px;
+}
+
+
+.ui-ddp-hide {
+    display: none;
+}
+
+.ui-ddp-dialog .ui-ddp-input {
+    line-height: 44px;
+}
+.ui-ddp-mb{
+    margin-bottom: 5px;
+}
